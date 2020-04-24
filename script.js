@@ -89,7 +89,7 @@ $( "#sort-select" ).change(function() {
       redirect: 'follow'
     };
 
-    fetch("http://webp.itprof.sk:8000/fetchurl", requestOptions)
+    fetch("https://webp.itprof.sk/fetchurl", requestOptions)
     .then(response => response.text())
     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
     .then(data => {
