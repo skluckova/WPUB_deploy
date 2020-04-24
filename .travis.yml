@@ -6,7 +6,7 @@ before_script:
   - npm install grunt-cli -g
   - npm install grunt
   - npm install grunt-contrib-cssmin
-  - npm install grunt-contrib-uglify
+  - npm install grunt-contrib-uglify-es
 
 script:
   - grunt cssmin
