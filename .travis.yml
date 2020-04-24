@@ -9,7 +9,8 @@ before_script:
   - npm install grunt-contrib-uglify
 
 script:
-  - grunt
+  - grunt cssmin
+  - grunt uglify
 
 deploy:
   provider: pages
