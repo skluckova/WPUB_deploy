@@ -1,4 +1,14 @@
-language: generic 
+language: node_js
+node_js:
+  - "stable"
+
+before_script:
+  - npm install grunt-cli -g
+  - npm install grunt
+  - npm install grunt-contrib-cssmin
+
+script:
+  - grunt
 
 deploy:
   provider: pages
