@@ -4,9 +4,9 @@ node_js:
 
 before_script:
   - npm install grunt-cli -g
-  - npm install grunt
-  - npm install grunt-contrib-cssmin
-  - npm install grunt-contrib-uglify-es
+  - npm install grunt -g
+  - npm install grunt-contrib-cssmin -g
+  - npm install grunt-contrib-uglify-es -g
 
 script:
   - grunt cssmin
