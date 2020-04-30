@@ -11,6 +11,9 @@ before_script:
 script:
   - grunt cssmin
   - grunt uglify
+  
+before_deploy:
+  - rm -rf /node_modules
 
 deploy:
   provider: pages
