@@ -11,6 +11,9 @@ before_script:
 script:
   - grunt cssmin
   - grunt uglify
+  
+cache:
+  npm: false
 
 deploy:
   provider: pages
