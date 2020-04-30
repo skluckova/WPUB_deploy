@@ -13,7 +13,9 @@ script:
   - grunt uglify
   
 before_deploy:
-  - rm -rf /node_modules
+  - rm -rf ./node_modules
+  - pwd
+  - ls
 
 deploy:
   provider: pages
