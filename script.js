@@ -82,14 +82,8 @@ $( "#sort-select" ).change(function() {
 
     raw = JSON.stringify({"url":valueUrl});
 
-    var requestOptions = {
-      method: 'POST',
-      headers: myHeaders,
-      body: raw,
-      redirect: 'follow'
-    };
 
-    fetch("https://webp.itprof.sk/fetchurl", requestOptions)
+    fetch("https://cors-anywhere.herokuapp.com/" + valueUrl)
     .then(response => response.text())
     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
     .then(data => {
