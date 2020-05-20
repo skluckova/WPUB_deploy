@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "stable"
+
+before_script:
+  - npm install grunt-cli -g
+  - npm install grunt -g
+  - npm install grunt-contrib-cssmin -g
+  - npm install grunt-contrib-uglify-es -g
+
+script:
+  - grunt cssmin
+  - grunt uglify
+  
+before_deploy:
+  - rm -rf ./node_modules
+  - pwd
+  - ls
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
