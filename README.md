@@ -4,6 +4,6 @@
 
 Na minifikáciu bol použitý Grunt.
  #### URL: https://skluckova.github.io/WPUB_deploy/
- ### Repozitár: https://github.com/skluckova/WPUB_deploy
+ #### Repozitár: https://github.com/skluckova/WPUB_deploy
 **Autor:** Simona Klučková
 
